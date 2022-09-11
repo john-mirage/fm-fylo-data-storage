@@ -1,66 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/png" href="src/assets/images/favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fylo Data Storage</title>
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="src/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
-    <body class="bg-very-dark-blue">
+  <!-- Primary Meta Tags -->
+  <title>Fylo Data Storage</title>
+  <meta name="title" content="Fylo Data Storage">
+  <meta name="description" content="Frontend mentor challenge solution for: Fylo Data Storage">
 
-        <main class="flex w-full min-h-screen p-gap">
-            <div class="z-50 w-full h-auto my-auto sm:max-w-mobile sm:mx-auto lg:flex lg:flex-row lg:justify-start lg:items-start lg:max-w-desktop">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://john-mirage.github.io/fylo-data-storage/">
+  <meta property="og:title" content="Fylo Data Storage">
+  <meta property="og:description" content="Frontend mentor challenge solution for: Fylo Data Storage">
+  <meta property="og:image" content="https://john-mirage.github.io/fylo-data-storage/preview.jpg">
 
-                <div class="w-full h-auto rounded-b-xl rounded-tl-xl rounded-tr-[6.25rem] px-10 pt-10 pb-6 bg-dark-blue mb-4 lg:mb-0 lg:w-[21.875rem] lg:mr-[1.875rem]">
-                    <img class="w-auto h-8 mb-8 xs:h-10" src="src/assets/images/logo.svg" alt="Logo">
-                    <div class="flex flex-wrap flex-row justify-start items-start w-full h-auto">
-                        <div class="flex-shrink-0 flex-grow-0 flex w-12 h-12 rounded-[0.625rem] bg-very-dark-blue mb-4 mr-4">
-                            <svg class="w-auto h-6 m-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                                <path class="fill-icons" d="M12.028 0H2.436A2.387 2.387 0 00.049 2.398L.037 21.583a2.387 2.387 0 002.387 2.398h14.4a2.397 2.397 0 002.398-2.398V7.194L12.028 0zM10.83 8.393V1.8l6.595 6.594h-6.595z"/>
-                            </svg>
-                        </div>
-                        <div class="flex-shrink-0 flex-grow-0 flex w-12 h-12 rounded-[0.625rem] bg-very-dark-blue mb-4 mr-4">
-                            <svg class="w-6 h-auto m-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20">
-                                <path class="fill-icons" d="M21.6 2.4H12L9.6 0H2.4A2.39 2.39 0 00.012 2.4L0 16.8a2.4 2.4 0 002.4 2.4h19.2a2.4 2.4 0 002.4-2.4v-12a2.4 2.4 0 00-2.4-2.4z"/>
-                            </svg>
-                        </div>
-                        <div class="flex-shrink-0 flex-grow-0 flex w-12 h-12 rounded-[0.625rem] bg-very-dark-blue mb-4 mr-4">
-                            <svg class="w-6 h-auto m-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
-                                <path class="fill-icons" d="M19.4 6c-.7-3.4-3.7-6-7.4-6-2.9 0-5.4 1.6-6.6 4C2.3 4.4 0 6.9 0 10c0 3.3 2.7 6 6 6h13c2.8 0 5-2.2 5-5 0-2.6-2.1-4.8-4.6-5zM14 9v4h-4V9H7l5-5 5 5h-3z"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="w-full h-auto rounded-xl px-8 pt-8 bg-dark-blue text-center mb-9 lg:relative lg:mb-0 lg:mt-auto lg:pb-10 lg:px-10 lg:flex-1 lg:text-left">
-                    <h1 class="text-sm text-pale-blue leading-6 mb-3">You've used <span class="font-bold">815 GB</span> of your storage</h1>
-                    <div class="w-full h-5 rounded-full border-[3px] border-very-dark-blue overflow-hidden bg-very-dark-blue mb-2">
-                        <div class="w-3/4 h-full bg-gradient-to-r from-gradient-from to-gradient-to rounded-r-full p-0.5">
-                            <div class="ml-auto w-2.5 h-2.5 bg-pale-blue rounded-full"></div>
-                        </div>
-                    </div>
-                    <div class="flex flex-row justify-between items-start w-full h-auto -mb-4 lg:mb-0">
-                        <p class="text-[0.8125rem] text-pale-blue font-bold leading-[0.875rem]">0 GB</p>
-                        <p class="text-[0.8125rem] text-pale-blue font-bold leading-[0.875rem]">1000 GB</p>
-                    </div>
-                    <div class="inline-flex flex-col justify-start items-center xs:flex-row w-auto h-auto px-6 pt-1.5 pb-4 xs:py-1.5 bg-[#fff] rounded-[0.625rem] translate-y-1/2 lg:absolute lg:z-50 lg:top-0 lg:right-10 lg:-translate-y-[3.125rem] lg:rounded-br-none">
-                        <p class="text-[2.5rem] text-very-dark-blue font-bold xs:mr-2">185</p>
-                        <p class="text-[0.8125rem] text-grayish-blue font-bold uppercase">gb left</p>
-                        <div class="hidden lg:block lg:triangle"></div>
-                    </div>
-                </div>
-    
-            </div>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://john-mirage.github.io/fylo-data-storage/">
+  <meta property="twitter:title" content="Fylo Data Storage">
+  <meta property="twitter:description" content="Frontend mentor challenge solution for: Fylo Data Storage">
+  <meta property="twitter:image" content="https://john-mirage.github.io/fylo-data-storage/preview.jpg">
+</head>
 
-            <div role="img" aria-label="background images" class="z-10 fixed bottom-0 left-0 w-full h-full bg-mobile bg-no-repeat bg-cover lg:h-1/2 lg:bg-desktop lg:bg-cover"></div>
-        </main>
+<body class="page">
+  <header class="page__section page__section--header">
+    <img class="page__logo" src="src/images/logo.svg" alt="Fylo logo" draggable="false">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            <svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24" fill="currentColor">
+              <path d="M12.028 0H2.436A2.387 2.387 0 00.049 2.398L.037 21.583a2.387 2.387 0 002.387 2.398h14.4a2.397 2.397 0 002.398-2.398V7.194L12.028 0zM10.83 8.393V1.8l6.595 6.594h-6.595z" />
+            </svg>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            <svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" fill="currentColor">
+              <path d="M21.6 2.4H12L9.6 0H2.4A2.39 2.39 0 00.012 2.4L0 16.8a2.4 2.4 0 002.4 2.4h19.2a2.4 2.4 0 002.4-2.4v-12a2.4 2.4 0 00-2.4-2.4z" />
+            </svg>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            <svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" fill="currentColor">
+              <path d="M19.4 6c-.7-3.4-3.7-6-7.4-6-2.9 0-5.4 1.6-6.6 4C2.3 4.4 0 6.9 0 10c0 3.3 2.7 6 6 6h13c2.8 0 5-2.2 5-5 0-2.6-2.1-4.8-4.6-5zM14 9v4h-4V9H7l5-5 5 5h-3z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        <script type="module" src="/src/main.ts"></script>
-    </body>
+  <main class="page__section page__section--body">
+    <h1 class="page__title">You've used <span class="page__title-bold">815 GB</span> of your storage</h1>
+    <div class="range">
+      <div class="range__track">
+        <div class="range__progress">
+          <div class="range__handle"></div>
+        </div>
+      </div>
+      <p class="range__label">0 gb</p>
+      <p class="range__label">1000 gb</p>
+    </div>
+    <div class="popover">
+      <p class="popover__title">
+        <span class="popover__remaining">185</span>
+        <span class="popover__unit">gb left</span>
+      </p>
+      <div class="popover__triangles"></div>
+    </div>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
 
 </html>

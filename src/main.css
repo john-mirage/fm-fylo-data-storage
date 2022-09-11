@@ -1,0 +1,16 @@
+@import "styles/reset.css";
+
+@import "styles/navigation.css";
+@import "styles/page.css";
+@import "styles/popover.css";
+@import "styles/range.css";
+
+:root {
+  --color-gradient-from: hsl(6, 100%, 80%);
+  --color-gradient-to: hsl(335, 100%, 65%);
+  --color-pale-blue: hsl(243, 100%, 93%);
+  --color-grayish-blue: hsl(229, 7%, 55%);
+  --color-dark-blue: hsl(228, 56%, 26%);
+  --color-very-dark-blue: hsl(229, 57%, 11%);
+  --color-icon: hsl(228, 55%, 62%);
+}

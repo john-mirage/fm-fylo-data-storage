@@ -1,0 +1,42 @@
+.range {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.range__track {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 1.25rem;
+  border-radius: 9999px;
+  border: 0.1875rem solid var(--color-very-dark-blue);
+  overflow: hidden;
+  background-color: var(--color-very-dark-blue);
+}
+
+.range__progress {
+  width: 81.5%;
+  height: 100%;
+  padding: 0.125rem;
+  background: linear-gradient(to right, var(--color-gradient-from), var(--color-gradient-to));
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.range__handle {
+  margin-left: auto;
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: var(--color-pale-blue);
+  border-radius: 9999px;
+}
+
+.range__label {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 0.875rem;
+  color: var(--color-pale-blue);
+  text-transform: uppercase;
+}

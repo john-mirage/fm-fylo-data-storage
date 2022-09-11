@@ -13,4 +13,5 @@
   --color-dark-blue: hsl(228, 56%, 26%);
   --color-very-dark-blue: hsl(229, 57%, 11%);
   --color-icon: hsl(228, 55%, 62%);
+  --color-white: hsl(0, 0%, 100%);
 }

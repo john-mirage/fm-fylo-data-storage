@@ -9,12 +9,13 @@
 
 .page__section {
   width: 100%;
-  padding: 2.5rem;
+  max-width: 20.3125rem;
   background-color: var(--color-dark-blue);
 }
 
 .page__section--header {
   margin-bottom: 1rem;
+  padding: 2.5rem;
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 6.25rem;
   border-bottom-left-radius: 0.75rem;
@@ -22,7 +23,9 @@
 }
 
 .page__section--body {
+  padding: 2.5rem 2.5rem 0 2.5rem;
   border-radius: 0.75rem;
+  text-align: center;
 }
 
 .page__logo {
@@ -35,7 +38,6 @@
   font-weight: 400;
   line-height: 1.5rem;
   color: var(--color-pale-blue);
-  text-align: center;
 }
 
 .page__title-bold {

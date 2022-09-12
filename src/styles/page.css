@@ -1,3 +1,14 @@
+@keyframes pageStorageLeftFade {
+  from {
+    opacity: 0;
+    transform: var(--storage-left-animation-from);
+  }
+  to {
+    opacity: 1;
+    transform: var(--storage-left-animation-to);
+  }
+}
+
 .page {
   position: relative;
   display: flex;
@@ -12,6 +23,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  width: 100%;
+  max-width: 20.3125rem;
 }
 
 .page__background {
@@ -27,9 +40,23 @@
   background-repeat: no-repeat;
 }
 
+.page__storage-left {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  animation-name: pageStorageLeftFade;
+  animation-duration: 600ms;
+  animation-delay: 900ms;
+  animation-fill-mode: backwards;
+}
+
 @media screen and (min-width: 970px) {
   .page__content {
     flex-direction: row;
+    width: auto;
+    max-width: none;
   }
   
   .page__background {
@@ -37,5 +64,15 @@
     background-image: url("/src/images/bg-desktop.png");
     background-size: cover;
     background-position: left top;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  .page__storage-left {
+    top: 0;
+    bottom: auto;
+    right: 2.5rem;
+    left: auto;
+    transform: none;
   }
 }

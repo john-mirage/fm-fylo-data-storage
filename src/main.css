@@ -2,7 +2,7 @@
 
 @import "styles/page.css";
 @import "styles/header.css";
-@import "styles/storage-used.css";
+@import "styles/storage-info.css";
 @import "styles/storage-left.css";
 
 :root {
@@ -15,8 +15,8 @@
   --color-icon: hsl(228, 55%, 62%);
   --color-white: hsl(0, 0%, 100%);
 
-  --storage-left-animation-from: translate3d(0, 100%, 0) translateX(-50%);
-  --storage-left-animation-to: translate3d(0, 0, 0) translateX(-50%);
+  --storage-left-animation-from: translate3d(0, 100%, 0) translate(-50%, 50%);
+  --storage-left-animation-to: translate3d(0, 0, 0) translate(-50%, 50%);
 }
 
 @media screen and (min-width: 970px) {

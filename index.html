@@ -63,22 +63,22 @@
       </nav>
     </header>
   
-    <!-- storage used -->
-    <main class="storage-used">
-      <h1 class="storage-used__title">You've used <span class="storage-used__value">815 GB</span> of your storage</h1>
-      <div class="storage-used__range">
-        <div class="storage-used__range-track">
-          <div class="storage-used__range-progress">
-            <div class="storage-used__range-handle"></div>
+    <!-- storage info -->
+    <main class="storage-info" is="web-storage-info">
+      <h1 class="storage-info__title">You've used <span class="storage-info__value"><span id="used-storage"></span> GB</span> of your storage</h1>
+      <div class="storage-info__range">
+        <div class="storage-info__range-track">
+          <div class="storage-info__range-progress">
+            <div class="storage-info__range-handle"></div>
           </div>
         </div>
-        <p class="storage-used__range-label">0 gb</p>
-        <p class="storage-used__range-label">1000 gb</p>
+        <p class="storage-info__range-label">0 gb</p>
+        <p class="storage-info__range-label">1000 gb</p>
       </div>
     </main>
 
     <!-- storage left -->
-    <aside class="storage-left">
+    <aside class="storage-left page__storage-left">
       <p class="storage-left__label storage-left__label--remaining">185</p>
       <p class="storage-left__label storage-left__label--unit">gb left</p>
       <div class="storage-left__triangle"></div>

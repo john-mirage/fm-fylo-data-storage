@@ -14,4 +14,14 @@
   --color-very-dark-blue: hsl(229, 57%, 11%);
   --color-icon: hsl(228, 55%, 62%);
   --color-white: hsl(0, 0%, 100%);
+
+  --popover-animation-from: translate3d(0, 100%, 0) translateX(-50%);
+  --popover-animation-to: translate3d(0, 0, 0) translateX(-50%);
+}
+
+@media screen and (min-width: 970px) {
+  :root {
+    --popover-animation-from: translate3d(0, -100%, 0);
+    --popover-animation-to: translate3d(0, 0, 0);
+  }
 }

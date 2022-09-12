@@ -1,3 +1,12 @@
+@keyframes rangeScale {
+  from {
+    transform: translateX(calc(-100% + 0.875rem));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .range {
   display: flex;
   flex-direction: row;
@@ -23,6 +32,12 @@
   background: linear-gradient(to right, var(--color-gradient-from), var(--color-gradient-to));
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
+  transform-origin: left;
+  animation-name: rangeScale;
+  animation-duration: 900ms;
+  animation-delay: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
 }
 
 .range__handle {
@@ -31,6 +46,7 @@
   height: 0.625rem;
   background-color: var(--color-pale-blue);
   border-radius: 9999px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 
 .range__label {

@@ -1,7 +1,20 @@
+@keyframes popoverFade {
+  from {
+    opacity: 0;
+    transform: var(--popover-animation-from);
+  }
+  to {
+    opacity: 1;
+    transform: var(--popover-animation-to);
+  }
+}
+
 .popover {
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-flex;
+  position: absolute;
+  z-index: 100;
+  bottom: -2.25rem;
+  left: 50%;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
@@ -10,7 +23,12 @@
   padding: 0.25rem 1.5rem;
   background-color: var(--color-white);
   border-radius: 0.625rem;
-  transform: translateY(50%);
+  transform: translateX(-50%);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  animation-name: popoverFade;
+  animation-duration: 600ms;
+  animation-delay: 1200ms;
+  animation-fill-mode: backwards;
 }
 
 .popover__label {
@@ -41,9 +59,10 @@
 
 @media screen and (min-width: 970px) {
   .popover {
-    position: absolute;
-    top: -3rem;
+    top: 0;
+    bottom: auto;
     right: 2.5rem;
+    left: auto;
     transform: none;
     border-top-left-radius: 0.625rem;
     border-bottom-left-radius: 0.625rem;
@@ -54,7 +73,6 @@
   .popover__triangle {
     display: block;
     position: absolute;
-    z-index: 50;
     bottom: 0;
     right: 0;
     width: 0;

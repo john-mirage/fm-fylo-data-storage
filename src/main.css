@@ -1,9 +1,9 @@
 @import "styles/reset.css";
 
-@import "styles/navigation.css";
 @import "styles/page.css";
-@import "styles/popover.css";
-@import "styles/range.css";
+@import "styles/header.css";
+@import "styles/storage-used.css";
+@import "styles/storage-left.css";
 
 :root {
   --color-gradient-from: hsl(6, 100%, 80%);
@@ -15,13 +15,13 @@
   --color-icon: hsl(228, 55%, 62%);
   --color-white: hsl(0, 0%, 100%);
 
-  --popover-animation-from: translate3d(0, 100%, 0) translateX(-50%);
-  --popover-animation-to: translate3d(0, 0, 0) translateX(-50%);
+  --storage-left-animation-from: translate3d(0, 100%, 0) translateX(-50%);
+  --storage-left-animation-to: translate3d(0, 0, 0) translateX(-50%);
 }
 
 @media screen and (min-width: 970px) {
   :root {
-    --popover-animation-from: translate3d(0, -100%, 0);
-    --popover-animation-to: translate3d(0, 0, 0);
+    --storage-left-animation-from: translate3d(0, -100%, 0);
+    --storage-left-animation-to: translate3d(0, 0, 0);
   }
 }

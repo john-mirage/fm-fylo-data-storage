@@ -1,4 +1,5 @@
 .page {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +8,22 @@
   background-color: var(--color-very-dark-blue);
 }
 
+.page__background {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/src/images/bg-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .page__section {
+  position: relative;
+  z-index: 100;
   width: 100%;
   max-width: 20.3125rem;
   background-color: var(--color-dark-blue);
@@ -42,4 +58,36 @@
 
 .page__title-bold {
   font-weight: 700;
+}
+
+@media screen and (min-width: 970px) {
+  .page {
+    flex-direction: row;
+  }
+  
+  .page__background {
+    height: 50%;
+    background-image: url("/src/images/bg-desktop.png");
+    background-size: cover;
+    background-position: left top;
+  }
+
+  .page__section {
+    max-width: none;
+  }
+
+  .page__section--header {
+    margin-bottom: 0;
+    margin-right: 2rem;
+    flex: none;
+    width: 21.875rem;
+  }
+
+  .page__section--body {
+    position: relative;
+    flex: none;
+    width: 33.75rem;
+    padding: 2.5rem;
+    text-align: left;
+  }
 }

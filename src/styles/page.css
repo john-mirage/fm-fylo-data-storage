@@ -19,6 +19,7 @@
 }
 
 .page__content {
+  margin-bottom: 2.25rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -54,6 +55,7 @@
 
 @media screen and (min-width: 970px) {
   .page__content {
+    margin-bottom: 0;
     flex-direction: row;
     width: auto;
     max-width: none;

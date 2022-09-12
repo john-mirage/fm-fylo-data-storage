@@ -1,15 +1,15 @@
-@keyframes popoverFade {
+@keyframes storageLeftFade {
   from {
     opacity: 0;
-    transform: var(--popover-animation-from);
+    transform: var(--storage-left-animation-from);
   }
   to {
     opacity: 1;
-    transform: var(--popover-animation-to);
+    transform: var(--storage-left-animation-to);
   }
 }
 
-.popover {
+.storage-left {
   position: absolute;
   z-index: 100;
   bottom: -2.25rem;
@@ -25,40 +25,40 @@
   border-radius: 0.625rem;
   transform: translateX(-50%);
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  animation-name: popoverFade;
+  animation-name: storageLeftFade;
   animation-duration: 600ms;
   animation-delay: 1200ms;
   animation-fill-mode: backwards;
 }
 
-.popover__label {
+.storage-left__label {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.popover__label--remaining {
+.storage-left__label--remaining {
   font-size: 2.5rem;
   line-height: 1;
   color: var(--color-very-dark-blue);
 }
 
-.popover__label--unit {
+.storage-left__label--unit {
   font-size: 0.8125rem;
   color: var(--color-grayish-blue);
 }
 
-.popover__triangle {
+.storage-left__triangle {
   display: none;
 }
 
 @media screen and (min-width: 303px) {
-  .popover__label--remaining {
+  .storage-left__label--remaining {
     margin-right: 0.5rem;
   }
 }
 
 @media screen and (min-width: 970px) {
-  .popover {
+  .storage-left {
     top: 0;
     bottom: auto;
     right: 2.5rem;
@@ -70,7 +70,7 @@
     border-bottom-right-radius: 0;
   }
 
-  .popover__triangle {
+  .storage-left__triangle {
     display: block;
     position: absolute;
     bottom: 0;

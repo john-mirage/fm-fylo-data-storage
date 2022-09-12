@@ -27,47 +27,6 @@
   background-repeat: no-repeat;
 }
 
-.page__section {
-  position: relative;
-  z-index: 100;
-  width: 100%;
-  max-width: 20.3125rem;
-  background-color: var(--color-dark-blue);
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-}
-
-.page__section--header {
-  margin-bottom: 1rem;
-  padding: 2.5rem;
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 6.25rem;
-  border-bottom-left-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
-}
-
-.page__section--body {
-  border-radius: 0.75rem;
-  padding: 2.5rem 2.5rem 3.5rem 2.5rem;
-  text-align: center;
-}
-
-.page__logo {
-  margin-bottom: 2rem;
-  padding-right: 1rem;
-}
-
-.page__title {
-  margin-bottom: 1.5rem;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  color: var(--color-pale-blue);
-}
-
-.page__title-bold {
-  font-weight: 700;
-}
-
 @media screen and (min-width: 970px) {
   .page__content {
     flex-direction: row;
@@ -78,24 +37,5 @@
     background-image: url("/src/images/bg-desktop.png");
     background-size: cover;
     background-position: left top;
-  }
-
-  .page__section {
-    max-width: none;
-    padding: 2.5rem;
-  }
-
-  .page__section--header {
-    margin-bottom: 0;
-    margin-right: 2rem;
-    flex: none;
-    width: 21.875rem;
-  }
-
-  .page__section--body {
-    position: relative;
-    flex: none;
-    width: 33.75rem;
-    text-align: left;
   }
 }

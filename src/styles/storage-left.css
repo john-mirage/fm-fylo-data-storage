@@ -1,34 +1,16 @@
-@keyframes storageLeftFade {
-  from {
-    opacity: 0;
-    transform: var(--storage-left-animation-from);
-  }
-  to {
-    opacity: 1;
-    transform: var(--storage-left-animation-to);
-  }
-}
-
 .storage-left {
-  position: absolute;
-  z-index: 100;
-  bottom: -2.25rem;
-  left: 50%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 11.25rem;
   min-height: 4.5rem;
   padding: 0.25rem 1.5rem;
   background-color: var(--color-white);
   border-radius: 0.625rem;
-  transform: translateX(-50%);
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  animation-name: storageLeftFade;
-  animation-duration: 600ms;
-  animation-delay: 1200ms;
-  animation-fill-mode: backwards;
 }
 
 .storage-left__label {
@@ -37,12 +19,15 @@
 }
 
 .storage-left__label--remaining {
+  margin-right: 0.5rem;
   font-size: 2.5rem;
   line-height: 1;
   color: var(--color-very-dark-blue);
 }
 
 .storage-left__label--unit {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   font-size: 0.8125rem;
   color: var(--color-grayish-blue);
 }
@@ -51,19 +36,8 @@
   display: none;
 }
 
-@media screen and (min-width: 303px) {
-  .storage-left__label--remaining {
-    margin-right: 0.5rem;
-  }
-}
-
 @media screen and (min-width: 970px) {
   .storage-left {
-    top: 0;
-    bottom: auto;
-    right: 2.5rem;
-    left: auto;
-    transform: none;
     border-top-left-radius: 0.625rem;
     border-bottom-left-radius: 0.625rem;
     border-top-right-radius: 0.625rem;
